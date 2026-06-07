@@ -277,7 +277,7 @@ Use on:
 **brainrotshiva** — Cybersecurity fresher, CTF player, SOC enthusiast
 
 - GitHub: [@brainrotshiva](https://github.com/brainrotshiva)
-- Certifications: HSCCSP | ISC2 CC
+- Certifications: HSCCSP (current)
 - Based in Hyderabad, India
 
 ---
