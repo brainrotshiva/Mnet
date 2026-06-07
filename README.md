@@ -82,40 +82,44 @@ No external dependencies — runs on Python 3.6+ standard library only.
 
 ## Usage
 
+After install, use `mnet` just like `nmap` — short and simple:
+
 ```bash
-# Basic scan (ports 1-1024)
-python3 mnet.py 192.168.1.1
+# Basic scan
+mnet 192.168.1.1
 
-# Full recon — OS, vulns, AI analysis, banner grab
-python3 mnet.py 10.0.0.1 --vuln --os --banner
+# Full recon
+mnet 192.168.1.1 --vuln --os
 
-# Scan specific ports
-python3 mnet.py scanme.nmap.org -p 22,80,443,8080,6443
+# Specific ports
+mnet 192.168.1.1 -p 22,80,443
 
-# Top 100 most common ports
-python3 mnet.py 192.168.1.1 --top100
+# All ports
+mnet 192.168.1.1 -p all
 
-# Full port scan (1-65535)
-python3 mnet.py 10.0.0.1 -p all -t 500
+# Top 100 ports
+mnet 192.168.1.1 --top100
 
 # UDP scan
-python3 mnet.py 10.0.0.1 -sU -p 53,161,123,67
+mnet 192.168.1.1 -sU
 
-# Stealth SYN scan (root required)
-sudo python3 mnet.py 10.0.0.1 -sS
+# Stealth SYN scan
+sudo mnet 192.168.1.1 -sS
 
 # IPv6 scan
-python3 mnet.py 2001:db8::1 --top100
+mnet 2001:db8::1
 
-# Ping sweep — discover live hosts in subnet
-python3 mnet.py 192.168.1.0/24 --sweep
+# Ping sweep
+mnet 192.168.1.0/24 --sweep
 
-# Export HTML report
-python3 mnet.py 10.0.0.1 --vuln --html report.html
+# Save HTML report
+mnet 192.168.1.1 --vuln --html report.html
 
-# Export JSON + CSV
-python3 mnet.py 10.0.0.1 --json scan.json --csv scan.csv
+# Save JSON + CSV
+mnet 192.168.1.1 --json scan.json --csv scan.csv
 ```
+
+> Without install, use `python3 mnet.py` instead of `mnet`
 
 ---
 
@@ -158,7 +162,7 @@ MNet integrates with **Claude (Anthropic)** for intelligent risk analysis:
 
 ```bash
 export ANTHROPIC_API_KEY="your-key-here"
-python3 mnet.py 10.0.0.1 --vuln
+mnet 10.0.0.1 --vuln
 ```
 
 Without an API key, MNet automatically falls back to built-in rule-based analysis covering 30+ critical vulnerability patterns.
