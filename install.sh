@@ -35,7 +35,7 @@ PYTHON_VER=$(python3 -c "import sys; print(f'{sys.version_info.major}.{sys.versi
 echo -e "${GREEN}[+]${RESET} Python $PYTHON_VER detected"
 
 # ── 2. Clone repo ─────────────────────────────────────────────
-INSTALL_DIR="$HOME/.local/share/mnet"
+INSTALL_DIR="/home/kali/.local/share/mnet"
 
 if [ -d "$INSTALL_DIR" ]; then
     echo -e "${CYAN}[*]${RESET} Updating existing installation..."
