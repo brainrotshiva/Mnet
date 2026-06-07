@@ -54,11 +54,9 @@
 
 ## Quick Install (Kali Linux)
 
+**One-line install:**
 ```bash
-git clone https://github.com/brainrotshiva/mnet
-cd mnet
-chmod +x install.sh
-sudo ./install.sh
+git clone https://github.com/brainrotshiva/Mnet && cd Mnet && sudo ./install.sh
 ```
 
 Then run from anywhere:
@@ -277,7 +275,7 @@ Use on:
 **brainrotshiva** — Cybersecurity fresher, CTF player, SOC enthusiast
 
 - GitHub: [@brainrotshiva](https://github.com/brainrotshiva)
-- Certifications: HSCCSP (current)
+- Certifications: HSCCSP
 - Based in Hyderabad, India
 
 ---
