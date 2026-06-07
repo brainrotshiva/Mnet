@@ -71,7 +71,8 @@ mnet 192.168.1.1
 ```bash
 git clone https://github.com/brainrotshiva/mnet
 cd mnet
-python3 mnet.py --help
+chmod +x ./install.sh
+sudo ./install.sh
 ```
 
 No external dependencies — runs on Python 3.6+ standard library only.
