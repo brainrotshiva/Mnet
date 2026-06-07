@@ -56,7 +56,7 @@
 
 **One-line install:**
 ```bash
-git clone https://github.com/brainrotshiva/Mnet && cd Mnet && sudo ./install.sh
+git clone https://github.com/brainrotshiva/Mnet && cd Mnet && chmod +x install.sh && sudo ./install.sh
 ```
 
 Then run from anywhere:
