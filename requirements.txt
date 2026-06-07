@@ -1,0 +1,24 @@
+# MNet — Mapping Network Tool
+# Author: brainrotshiva
+# GitHub: https://github.com/brainrotshiva/Mnet
+#
+# MNet runs on Python 3.6+ standard library only.
+# No external packages required for basic use.
+#
+# Optional — install for enhanced features:
+# pip install -r requirements.txt
+
+# ── Core (already built-in, listed for clarity) ──
+# socket       — port scanning
+# threading    — multi-threaded scanning
+# subprocess   — ping / OS fingerprint
+# argparse     — CLI arguments
+# json         — JSON export
+# csv          — CSV export
+
+# ── Optional enhanced features ──
+# Uncomment below to enable:
+
+# rich>=13.0.0          # Beautiful terminal UI
+# scapy>=2.5.0          # Real SYN stealth scanning
+# requests>=2.28.0      # HTTP-based cloud API checks
