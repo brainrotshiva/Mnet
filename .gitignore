@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.env
-*.log
-report.html
-scan.json
-scan.csv
